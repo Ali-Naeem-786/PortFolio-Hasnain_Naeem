@@ -31,26 +31,20 @@
 .skill-item.languages {
     background-color: #f7fafc; /* Light gray background */
 }
-
-/* Highlight specific skills */
-.skill-item.languages .bg-red-500 {
-    background-color: #fc8181; /* Red background */
+.skill-item.back-end {
+    background-color: #f7fafc; /* Light gray background */
 }
-
-.skill-item.languages .bg-red-500 {
-    background-color: #fc8181; /* Red background */
+.skill-item.libraries-tools {
+    background-color: #f7fafc; /* Light gray background */
 }
-
-.skill-item.languages .bg-blue-500 {
-    background-color: #81defc; /* Light blue background */
+.skill-item.data-engineering {
+    background-color: #f7fafc; /* Light gray background */
 }
-
-.skill-item.languages .bg-gray-300 {
-    background-color: #cbd5e0; /* Light blue gray background */
+.skill-item.devops {
+    background-color: #f7fafc; /* Light gray background */
 }
-
-.skill-item.languages .bg-green-500 {
-    background-color: #68d391; /* Green background */
+.skill-item.soft-skills {
+    background-color: #f7fafc; /* Light gray background */
 }
 
 /* transcript */
