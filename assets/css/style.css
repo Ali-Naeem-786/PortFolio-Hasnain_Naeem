@@ -27,25 +27,14 @@
     border-color: darkblue; /* Blue border color */
 }
 
-/* Background color based on skill category */
-/* .skill-item.languages {
-    background-color: #f7fafc; 
+.skills-list {
+    list-style-type: disc; /* Ensure bullets are shown */
+    padding-left: 1.25rem; /* Adjust the padding for bullets to be visible */
 }
-.skill-item.back-end {
-    background-color: #f7fafc; 
+
+.skill-item.hidden {
+    display: none; /* Hide elements with the hidden class */
 }
-.skill-item.libraries-tools {
-    background-color: #f7fafc; 
-}
-.skill-item.data-engineering {
-    background-color: #f7fafc; 
-}
-.skill-item.devops {
-    background-color: #f7fafc; 
-}
-.skill-item.soft-skills {
-    background-color: #f7fafc;
-} */
 
 /* transcript */
 

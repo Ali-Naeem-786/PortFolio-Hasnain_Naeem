@@ -8,29 +8,59 @@
             }
         });
     }
-    function filterSkills(category) {
-        const skillItems = document.querySelectorAll('.skill-item');
+    // function filterSkills(category) {
+    //     const skillItems = document.querySelectorAll('.skill-item');
+    //     const buttons = document.querySelectorAll('.filter-button');
+    
+    //     buttons.forEach(button => {
+    //         button.classList.remove('active');
+    //     });
+    
+    //     skillItems.forEach(item => {
+    //         item.style.display = 'none';
+    //     });
+    
+    //     if (category === 'all') {
+    //         skillItems.forEach(item => {
+    //             item.style.display = 'block';
+    //         });
+    //     } else {
+    //         const filteredItems = document.querySelectorAll(`.${category}`);
+    //         filteredItems.forEach(item => {
+    //             item.style.display = 'block';
+    //         });
+    //     }
+    
+    //     event.currentTarget.classList.add('active');
+    // }
+    
+
+    document.addEventListener('DOMContentLoaded', function () {
         const buttons = document.querySelectorAll('.filter-button');
+        const skillsList = document.getElementById('skills-list');
+        const skillItems = skillsList.querySelectorAll('.skill-item');
     
         buttons.forEach(button => {
-            button.classList.remove('active');
-        });
+            button.addEventListener('click', function (event) {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
     
-        skillItems.forEach(item => {
-            item.style.display = 'none';
-        });
-    
-        if (category === 'all') {
-            skillItems.forEach(item => {
-                item.style.display = 'block';
+                const filter = this.getAttribute('data-filter');
+                filterSkills(filter);
             });
-        } else {
-            const filteredItems = document.querySelectorAll(`.${category}`);
-            filteredItems.forEach(item => {
-                item.style.display = 'block';
+        });
+    
+        function filterSkills(filter) {
+            skillItems.forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
             });
         }
     
-        event.currentTarget.classList.add('active');
-    }
+        // Set the default filter to 'all'
+        filterSkills('all');
+    });
     
