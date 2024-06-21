@@ -6,46 +6,46 @@
     font-weight: bold;
     padding: 8px 12px;
     font-size: 14px;
-    color: #3182ce; /* Blue color */
+    color: darkblue; /* Blue color */
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 /* Hover effect for buttons */
 .filter-button:hover {
-    background-color: #ebf8ff; /* Light blue background */
-    color: #3182ce; /* Blue text color */
-    border-color: #63b3ed; /* Blue border color */
+    background-color: white; /* Light blue background */
+    color: darkblue; /* Blue text color */
+    border-color: darkblue; /* Blue border color */
 }
 
 /* Active state for buttons when clicked */
 .filter-button.active {
-    background-color: #ebf8ff; /* Light blue background */
-    color: #3182ce; /* Blue text color */
-    border-color: #63b3ed; /* Blue border color */
+    background-color: white; /* Light blue background */
+    color: darkblue; /* Blue text color */
+    border-color: darkblue; /* Blue border color */
 }
 
 /* Background color based on skill category */
-.skill-item.languages {
-    background-color: #f7fafc; /* Light gray background */
+/* .skill-item.languages {
+    background-color: #f7fafc; 
 }
 .skill-item.back-end {
-    background-color: #f7fafc; /* Light gray background */
+    background-color: #f7fafc; 
 }
 .skill-item.libraries-tools {
-    background-color: #f7fafc; /* Light gray background */
+    background-color: #f7fafc; 
 }
 .skill-item.data-engineering {
-    background-color: #f7fafc; /* Light gray background */
+    background-color: #f7fafc; 
 }
 .skill-item.devops {
-    background-color: #f7fafc; /* Light gray background */
+    background-color: #f7fafc; 
 }
 .skill-item.soft-skills {
-    background-color: #f7fafc; /* Light gray background */
-}
+    background-color: #f7fafc;
+} */
 
 /* transcript */
 
