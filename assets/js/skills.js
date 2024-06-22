@@ -8,33 +8,7 @@
             }
         });
     }
-    // function filterSkills(category) {
-    //     const skillItems = document.querySelectorAll('.skill-item');
-    //     const buttons = document.querySelectorAll('.filter-button');
     
-    //     buttons.forEach(button => {
-    //         button.classList.remove('active');
-    //     });
-    
-    //     skillItems.forEach(item => {
-    //         item.style.display = 'none';
-    //     });
-    
-    //     if (category === 'all') {
-    //         skillItems.forEach(item => {
-    //             item.style.display = 'block';
-    //         });
-    //     } else {
-    //         const filteredItems = document.querySelectorAll(`.${category}`);
-    //         filteredItems.forEach(item => {
-    //             item.style.display = 'block';
-    //         });
-    //     }
-    
-    //     event.currentTarget.classList.add('active');
-    // }
-    
-
     document.addEventListener('DOMContentLoaded', function () {
         const buttons = document.querySelectorAll('.filter-button');
         const skillsList = document.getElementById('skills-list');
@@ -60,7 +34,6 @@
             });
         }
     
-        // Set the default filter to 'all'
         filterSkills('all');
     });
     
